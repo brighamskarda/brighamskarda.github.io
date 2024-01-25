@@ -1,1 +1,0 @@
-# brighamskarda.github.io
