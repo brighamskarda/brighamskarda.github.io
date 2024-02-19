@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+#header {
+	font-family: Ruda, sans-serif;
+	padding: 0.2em 2em 0.2em 2em;
+	margin-block-end: 0;
+	line-height: 1.2;
+	max-width: 800px;
+	min-width: 340px;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#header h1 {
+	font-size: 2.8em;
+	margin-block-end: 0;
+}
+
+#header h1 a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+#header nav {
+	font-size: 1.2em;
+}
+
+#header nav ul {
+	line-height: 2.5em;
+	margin: 0.5em 0em 0em 0em;
+}
+
+#header nav li {
+	display: inline;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+
+body {
+	font-family: Neuton, Georgia, serif;
+	background-color: #f0ede7;
+	line-height: 1.5;
+}
+
+main {
+	font-size: 1.1em;
+	max-width: 800px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+#title {
+	margin-bottom: 0em;
+	font-size: 2em;
+}
+
+#date {
+	font-family: Ruda;
+	font-size: 0.8em;
+}
