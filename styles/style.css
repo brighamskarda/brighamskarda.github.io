@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Liberation Sans";
+    src: url("../fonts/LiberationSans-Regular.ttf");
+}
+
+* {
+    font-family: "Liberation Sans";
+}
