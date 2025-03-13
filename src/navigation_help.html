@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <script>
+        function loadHeader() {
+            fetch('/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        }
+    </script>
+</head>
+
+<body onload="loadHeader()">
+    <div id="header"></div>
+    <article>
+        <h1>Navigation Help</h1>
+        <p>You have made it to the navigation help page.</p>
+        <p>This website is meant to be pretty simple, every article I write will have various topic flags. Each of those
+            topic flags are listed at the top of the website.</p>
+        <p>To see all articles on a certain topic click on that flag in the nav bar.</p>
+    </article>
+</body>
+
+</html>

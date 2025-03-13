@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <script>
+        function loadHeader() {
+            fetch('/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        }
+    </script>
+</head>
+<body onload="loadHeader()">
+    <div id="header"></div>
+    <h1>Video Games</h1>
+    <ol style="list-style-type: none;">
+        <li><a href="/articles/why_i_love_hots.html">Why I Love Heroes of the Storm</a> <br> <time datetime="2025-03-12">2025-03-12</time></li>
+        <li><a href="/articles/why_i_love_hots2.html">Why I Love Heroes of the Storm 2</a> <br> <time datetime="2025-03-12">2025-03-12</time></li>
+    </ol>
+</body>
+</html>

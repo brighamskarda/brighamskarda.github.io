@@ -3,10 +3,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <script>
         function loadHeader() {
-            fetch('header.html')
+            fetch('/header.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('header').innerHTML = data;
@@ -17,8 +17,15 @@
 
 <body onload="loadHeader()">
     <div id="header"></div>
+    <article>
+        <h1 id="title">Article Title</h1>
+        <time id="date" datetime="2025-03-12">Date</time>
+        <div id="flags">
+            <span>Video Games</span>
+        </div>
 
-    ⚠️ Under Construction ⚠️
+        <p>article body</p>
+    </article>
 </body>
 
 </html>
