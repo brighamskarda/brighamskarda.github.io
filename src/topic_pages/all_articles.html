@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    <script>
-        function loadHeader() {
-            fetch('/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        }
-    </script>
+    <script src="/general.js"></script>
 </head>
 <body onload="loadHeader()">
     <div id="header"></div>
-    <h1>All Articles</h1>
+    <div style="padding-left: 5%;">
+    <h2>All Articles</h2>
     <ol style="list-style-type: none;">
-        <li><a href="/articles/why_i_love_hots.html">Why I Love Heroes of the Storm</a> <br> <time datetime="2025-03-12">2025-03-12</time></li>
-        <li><a href="/articles/why_i_love_hots2.html">Why I Love Heroes of the Storm 2</a> <br> <time datetime="2025-03-12">2025-03-12</time></li>
+        <li><a href="/articles/why_i_love_hots.html">Why I Love Heroes of the Storm</a> <br> <time datetime="2025-03-13">2025-03-13</time></li>
+        <li><a href="/articles/why_i_love_hots2.html">Why I Love Heroes of the Storm</a> <br> <time datetime="2025-03-12">2025-03-12</time></li>
     </ol>
+</div>
 </body>
 </html>

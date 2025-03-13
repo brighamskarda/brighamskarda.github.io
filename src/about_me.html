@@ -3,22 +3,26 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    <script>
-        function loadHeader() {
-            fetch('/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        }
-    </script>
+    <script src="/general.js"></script>
 </head>
 
-<body onload="loadHeader()">
+<body onload="loadHeader(); fillTime()">
     <div id="header"></div>
-
-    ⚠️ Under Construction ⚠️
+    <article>
+        <h1 id="title">About Me</h1>
+        <p>I'm currently a student at BYU studying computer science. I like motorcycles and fishing and I'm currently
+            looking for a job.</p>
+        <p>I'm also find myself interested in learning different programming languages. My go to project to learn a
+            language in depth is to build a chess library.</p>
+        <p>To see some of my work feel free to take a look at <a href="https://github.com/brighamskarda">my github</a>.
+        </p>
+        <p>The best way to contact me is via email at <a
+                href="mailto:brighamskarda@gmail.com">brighamskarda@gmail.com</a>
+        </p>
+        <p><a href="https://www.linkedin.com/in/brigham-skarda-3471b4263">LinkedIn</a></p>
+    </article>
 </body>
 
 </html>

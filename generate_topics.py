@@ -29,26 +29,21 @@ def generate_topic_page(topic, articles):
     topic_html = f"""<!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    <script>
-        function loadHeader() {{
-            fetch('/header.html')
-                .then(response => response.text())
-                .then(data => {{
-                    document.getElementById('header').innerHTML = data;
-                }});
-        }}
-    </script>
+    <script src="/general.js"></script>
 </head>
 <body onload="loadHeader()">
     <div id="header"></div>
-    <h1>{topic.replace('_', ' ').title()}</h1>
+    <div style="padding-left: 5%;">
+    <h2>{topic.replace('_', ' ').title()}</h2>
     <ol style="list-style-type: none;">
 """
     for article in articles:
         date_str = article["date"].strftime("%Y-%m-%d")
         topic_html += f'        <li><a href="/articles/{article["file_name"]}.html">{article["title"]}</a> <br> <time datetime="{date_str}">{date_str}</time></li>\n'
     topic_html += """    </ol>
+</div>
 </body>
 </html>
 """

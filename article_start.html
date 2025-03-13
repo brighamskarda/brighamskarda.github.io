@@ -3,28 +3,25 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
-    <script>
-        function loadHeader() {
-            fetch('/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        }
-    </script>
+    <script src="/general.js"></script>
 </head>
 
-<body onload="loadHeader()">
+<body onload="loadHeader(); fillTime()">
     <div id="header"></div>
     <article>
-        <h1 id="title">Article Title</h1>
-        <time id="date" datetime="2025-03-12">Date</time>
+        <h1 id="title">Why I Love Heroes of the Storm</h1>
+        <time id="date" datetime="2025-03-13"></time>
         <div id="flags">
+            Tags:
+            <span>Video Games</span>,
+            <span>Video Games</span>,
+            <span>Video Games</span>,
             <span>Video Games</span>
         </div>
 
-        <p>article body</p>
+        <p>This is why I love heroes of the storm.</p>
     </article>
 </body>
 
