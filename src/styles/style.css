@@ -54,8 +54,9 @@ article time {
 }
 
 article img {
-    max-width: 960px;
-    width: 95%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 #flags {
@@ -64,4 +65,8 @@ article img {
 
 #flags span {
     opacity: 60%;
+}
+
+body {
+    margin-bottom: 10%;
 }
