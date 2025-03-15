@@ -5,8 +5,8 @@ from collections import defaultdict
 from bs4 import BeautifulSoup
 
 # Input and output directories
-ARTICLES_DIR = "src/articles"
-TOPIC_PAGES_DIR = "src/topic_pages"
+ARTICLES_DIR = "docs/articles"
+TOPIC_PAGES_DIR = "docs/topic_pages"
 
 
 def extract_article_data(article_path):
