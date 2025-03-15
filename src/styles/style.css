@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Liberation Sans";
+    src: url("../fonts/LiberationSans-Regular.ttf");
+}
+
+:root {
+    --background_color: #eaeaea;
+}
+
+* {
+    font-family: "Liberation Sans";
+    background-color: var(--background_color);
+}
+
+time {
+    opacity: 70%;
+    font-size: small;
+    padding-left: 4em;
+}
+
+header {
+    text-align: center;
+}
+
+header ol {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    row-gap: 1ch;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 95%;
+}
+
+article h1 {
+    text-align: center;
+    margin-bottom: 0.5ch;
+}
+
+article time {
+    padding-left: 0%;
+    display: block;
+    text-align: center;
+    margin-bottom: 2ch;
+}
+
+article img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#flags {
+    font-size: small;
+}
+
+#flags span {
+    opacity: 60%;
+}
+
+body {
+    margin-bottom: 10%;
+}
